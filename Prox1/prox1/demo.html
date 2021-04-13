@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Compiler</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script>
+      function compileHTML(field,e){
+      document.getElementById('output').innerHTML = field.value;
+        }
+    </script>
+<style>
+body {
+  background-image: url('wwf.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-size: 100% 100%;
+}
+</style>
+
+<style>
+.center {
+  text-align: center;
+  color: black;
+}
+</style>
+</head>
+<body>
+<h1 class="center">HTML Compiler</h1>
+  <div class="w3-display-top-middle">
+ <div class="w3-border">
+    <div class="w3-container w3-margin w3-blue">
+
+   <div style="display: flex;">
+<textarea style ="flex: 1; height: 100px;"  placeholder="HTML Goes here..." onkeyup="compileHTML(this)"></textarea>
+</div>
+</div>
+  </div>
+
+<div id="output"></div>
+</div>
+</body>
+</html>
+
